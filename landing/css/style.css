@@ -20,8 +20,10 @@ main{
     border: 1px dashed #b7f312;
     
 
-    
-}
+
+  }
+
+
 header {
     display:flex;
     flex-direction: row;
@@ -40,6 +42,8 @@ header {
     z-index: 1;
 }
 
+  
+
 footer{
     background-color: aqua;
     border: 1px dashed #b7f312;
@@ -53,6 +57,68 @@ section {
     border: 1px dashed #84888bd0;
     border: 1px dashed #b7f312;
   }
+
+
+  #ReseñasComentarios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 60px;
+  }
+  .Reseña{
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    height: 90vh;
+    background-color:#28333d;
+    box-shadow: 0 10px 8px rgba(95, 186, 167, 0.1);
+    border-radius: 3px;
+    border: 1px dashed #12f3f3;
+
+  }
+
+  .Reseña img{
+    max-width:100%;
+    border: 1px dashed #f31212;
+  }
+
+  .Comentarios{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Comentarios h1{
+    text-align: center;
+  }
+  .cliente{
+    display: flex;
+  gap: 10px;
+  padding: 15px;
+  background-color: #28333d;
+  border-radius: 8px;
+  }
+  
+  
+  
+  .cliente img {
+    width: 70px;
+    height: 70px;
+    border-radius: 90%;
+  }
+  
+  .cliente-mensaje {
+    flex: 1;
+    margin-bottom: 0.75rem;
+  }
+  
+  .cliente-firma {
+    font-style: italic;
+    font-weight: 600;
+  }
+
 
   .banner{
 
@@ -83,7 +149,74 @@ section {
   height: 100vh;
 
   }
+  #TopMejoresJuegos{
+    margin:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 60px;
+  }
+
+  .Top img{
+    max-width:100%;
+  }
   
+  .Top{
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    height: 75vh;
+    background: #28333d;
+    box-shadow: 0 10px 8px rgba(95, 186, 167, 0.1);
+    border-radius: 3px;
+    border: 1px dashed #12f3f3;
+  }
+
+  #ProximoEventos{
+    margin:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 60px;
+  }
+.ProxE{
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    height: 75vh;
+    background:#28333d;
+    box-shadow: 0 10px 8px rgba(95, 186, 167, 0.1);
+    border-radius: 3px;
+    border: 1px dashed #12f3f3;
+}
+
+
+.ProxE img{
+  max-width:100%;
+}
+  #ProximoTorneos{
+    margin:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 60px;
+  }
+  .ProxT{
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    height: 75vh;
+    background: #28333d;
+    box-shadow: 0 10px 8px rgba(95, 186, 167, 0.1);
+    border-radius: 3px;
+    border: 1px dashed #12f3f3;
+  }
+  .ProxT img{
+    max-width:100%;
+  }
 nav li {
     
     padding:0px;
@@ -112,7 +245,7 @@ nav li {
 
   }
   
-  img {
+  #logo img {
     display: flex;
     height: 55px;
     width: 55px;
