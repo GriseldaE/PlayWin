@@ -14,17 +14,8 @@ body {
     color: #9B59B6;
     border: 1px dashed #b7f312;
   }
-main{
-
-    background-color: #2c3e50;
-    border: 1px dashed #b7f312;
-    
-
-
-  }
-
-
-header {
+  /* Barra de inicio*/
+  header {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,13 +32,63 @@ header {
     border: 1px dashed #b7f312;
     z-index: 1;
 }
-
-  
-
-footer{
-    background-color: aqua;
+ #logo img {
+    display: flex;
+    height: 55px;
+    width: 55px;
+    margin: 15px;
+    margin-bottom: 0;
     border: 1px dashed #b7f312;
-}
+  }
+  #logo{
+    color: blue;
+    border: 1px dashed #b7f312;
+    margin-left: 20px;
+    border-radius: 50%;
+  } 
+  nav{
+    width: 100%;
+    height: 90px;
+    
+  }
+  nav li {
+    
+    padding: 1rem 2rem;
+    background-color: #5cd317;
+    border: 1px dashed #b7f312;
+    border-radius: 10%;
+    
+    
+  }
+  nav ul {
+    list-style:none;
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    border: 1px dashed #b7f312;
+    color:aliceblue;
+    align-items: center;
+    margin-top: 1.5%;
+  }
+  a:link{
+
+    color: aliceblue;
+    
+    margin: 0px;
+    background-color: aqua;
+
+  }
+  
+ /* Secciones */
+main{
+
+    background-color: #2c3e50;
+    border: 1px dashed #b7f312;
+    
+
+
+  }
+
 section {
     scroll-margin-top:  90px;
     padding: 45px 90px;
@@ -58,7 +99,33 @@ section {
     border: 1px dashed #b7f312;
   }
 
+  #Inicio{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  background: url("../img/iniciofondo.png") no-repeat center center fixed;
+  background-size: cover;
+
+  color: white;
+
+  height: 100vh;
+
+  }  
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  
+    background-color: #34495e;
+    opacity: 0.9;
+    padding: 3rem;
+  }
+
+  /* Reseña comentarios */
   #ReseñasComentarios{
     display: flex;
     justify-content: space-between;
@@ -100,15 +167,11 @@ section {
   background-color: #28333d;
   border-radius: 8px;
   }
-  
-  
-  
   .cliente img {
     width: 70px;
     height: 70px;
     border-radius: 90%;
   }
-  
   .cliente-mensaje {
     flex: 1;
     margin-bottom: 0.75rem;
@@ -118,51 +181,16 @@ section {
     font-style: italic;
     font-weight: 600;
   }
-
-
-  .banner{
-
-    display:flex;
-  flex-direction: column;
-  justify-content: center;
+/* Top mejores juegos */
+#TopMejoresJuegos{
+  margin:20px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-
-  background-color: #34495e;
-  opacity: 0.9;
-  padding: 3rem;
-    
-  
-  }
-
-  #Inicio{
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background: url("../img/iniciofondo.png") no-repeat center center fixed;
-  background-size: cover;
-
-  color: white;
-
-  height: 100vh;
-
-  }
-  #TopMejoresJuegos{
-    margin:20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    gap: 60px;
-  }
-
-  .Top img{
-    max-width:100%;
-  }
-  
-  .Top{
+  padding: 0;
+  gap: 60px;
+}
+.Top{
     flex: 1;
     text-align: center;
     padding: 2rem;
@@ -172,7 +200,11 @@ section {
     border-radius: 3px;
     border: 1px dashed #12f3f3;
   }
+  .Top img{
+    max-width:100%;
+  }
 
+  /*Proximos eventos */
   #ProximoEventos{
     margin:20px;
     display: flex;
@@ -196,73 +228,29 @@ section {
 .ProxE img{
   max-width:100%;
 }
-  #ProximoTorneos{
-    margin:20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    gap: 60px;
-  }
-  .ProxT{
-    flex: 1;
-    text-align: center;
-    padding: 2rem;
-    height: 75vh;
-    background: #28333d;
-    box-shadow: 0 10px 8px rgba(95, 186, 167, 0.1);
-    border-radius: 3px;
-    border: 1px dashed #12f3f3;
-  }
-  .ProxT img{
-    max-width:100%;
-  }
-nav li {
-    
-    padding:0px;
-    margin: 20px;
-    background-color: #5cd317;
-    border: 1px dashed #b7f312;
-    border-radius: 10%;
-    
-  }
-  nav ul {
-    list-style:none;
-    text-align: center;
-    display:flex;
-    justify-content: space-between;
-    border: 1px dashed #b7f312;
-    color:aliceblue;
-  }
-  a:link{
+/* Proximos torneos*/ 
+#ProximoTorneos{
+  margin:20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 60px;
+}
+.ProxT{
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+  height: 75vh;
+  background: #28333d;
+  box-shadow: 0 10px 8px rgba(95, 186, 167, 0.1);
+  border-radius: 3px;
+  border: 1px dashed #12f3f3;
+}
+.ProxT img{
+  max-width:100%;
+}
 
-    color: aliceblue;
-    padding: 1rem 2rem
-;
-    margin: 0px;
-  
-    background-color: aqua;
-
-  }
-  
-  #logo img {
-    display: flex;
-    height: 55px;
-    width: 55px;
-    margin: 15px;
-    margin-bottom: 0;
-    border: 1px dashed #b7f312;
-  }
-  #logo{
-    color: blue;
-    border: 1px dashed #b7f312;
-    margin-left: 20px;
-    border-radius: 50%;
-  }
-  nav{
-    width: 100%;
-    height: 90px;
-  }
   #btn-ir-arriba {
     display: none;
     cursor: pointer;
@@ -298,14 +286,91 @@ nav li {
     stroke-width: 3px;
     border: 1px dashed #b7f312;
   }
-  .banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
   
-    background-color: #34495e;
-    opacity: 0.9;
-    padding: 3rem;
+  footer{
+    background-color: aqua;
+    border: 1px dashed #b7f312;
+    text-align: center;
+    padding: 6rem 3rem;
+    
+}
+.contactos{
+  text-align: center;
+  
+}
+.contacto-form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 600px;
+  max-width: 50%;
+  margin-top: 0em;
+  margin-left: 25%;
+  
+}
+input, textarea {
+  margin-bottom: 1rem;
+  padding: 8px;
+  border: 1px solid #f312b0;
+  border-radius: 3px;
+}
+button.btn, a.button-link {
+  cursor: pointer;
+  background-color: #28333d;
+  color: #f5f7fa;
+  font-size: 1.25rem;
+  width: 100%;
+  height: 42px;
+  padding: 0 2rem;
+  border: none;
+  border-radius: 21px;
+  transition: color 0.5s;
+}
+
+.redes-sociales-container {
+  gap: 1.5rem;
+  padding: 1.5rem 1rem;
+  font-size: 2rem;
+  color:#9B59B6;
+}
+
+
+/* Respondive*/ 
+@media screen and (max-width: 1024px){
+
+  body{
+    font-size: medium;
+    color:#f31212;
   }
+  
+}
+
+@media screen  and (max-width:768px) {
+  body{
+    font-size: small;
+    color:#f312b0;
+
+  }
+  .banner{
+    font-size: smaller;
+  }
+  section{
+    gap:5px;
+  }
+  nav li{
+
+    padding: .5rem 1rem;
+    margin-top: 3%;
+  }
+  #logo img {
+    
+    height: 40px;
+    width: 40px;
+    
+  }
+  #logo{
+    
+    margin-left: 10px;
+    
+  } 
+}
